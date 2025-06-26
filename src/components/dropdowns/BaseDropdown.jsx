@@ -12,7 +12,8 @@ export const BaseDropdown = ({
     renderOption,
     position = "bottom", 
     align = "left", 
-    maxHeight = "max-h-[250px]",
+    width = "w-max",
+    height = "max-h-[250px]",
     dropdownBtnStyles = "",
 }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -67,7 +68,7 @@ export const BaseDropdown = ({
             <AnimatePresence>
                 {isOpen && (
                     <motion.ul
-                        className={`absolute ${positionClasses[position]} ${alignClasses[align]} z-10 w-max ${maxHeight} overflow-y-auto bg-white border border-gray-200 rounded-lg shadow-lg`}
+                        className={`absolute ${positionClasses[position]} ${alignClasses[align]} z-10 ${width} ${height} overflow-y-auto bg-white border border-gray-200 rounded-lg shadow-lg`}
                         initial={initialAnimation[position]}
                         animate={animateAnimation[position]}
                         exit={exitAnimation[position]}
@@ -78,7 +79,7 @@ export const BaseDropdown = ({
                         {options.map((option) => (
                             <li
                                 key={option.code || option}
-                                className={`px-4 py-2.5 hover:bg-[#E5F1FF] cursor-pointer flex items-center 
+                                className={`px-4 py-2.5 hover:bg-[#E5F1FF] cursor-pointer flex items-center transitions
                                     ${(option.code || option) === (selectedOption.code || selectedOption) ? "bg-[#E5F1FF]" : ""}`}
                                 onClick={() => handleSelect(option)}
                             >

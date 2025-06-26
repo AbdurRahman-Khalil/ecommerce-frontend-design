@@ -10,7 +10,7 @@ import menuIcon from "../../assets/svgs/header_svgs/menu.svg";
 
 
 export const CategoryDropdown = ({ variant = 'default' }) => {
-    const [selectedCategory, setSelectedCategory] = useState('All Category');
+    const [selectedCategory, setSelectedCategory] = useState('All Categories');
 
     const renderTrigger = (selected, isOpen) => {
         if (variant === 'menu') {
@@ -54,7 +54,8 @@ export const CategoryDropdown = ({ variant = 'default' }) => {
             onSelect={setSelectedCategory}
             renderTrigger={renderTrigger}
             renderOption={renderOption}
-            maxHeight={"max-h-[270px]"}
+            width={`${variant === 'default' ? "w-full" : "w-40"}`}
+            height={"min-h-max"}
             dropdownBtnStyles={getClassName()}
         />
     );

@@ -7,7 +7,7 @@ export const SearchBar = () => {
     return (
         <input
             type="text"
-            className="w-80 h-full font-light px-3 rounded-l-lg focus:outline-none hover:bg-gray-50 focus:bg-gray-100 transitions"
+            className="w-80 h-full px-3 rounded-l-lg focus:outline-none hover:bg-gray-50 focus:bg-gray-100 transitions"
             placeholder="Search products..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}

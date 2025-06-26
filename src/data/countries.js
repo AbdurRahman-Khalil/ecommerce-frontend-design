@@ -12,8 +12,8 @@ import uaeFlag from "../assets/svgs/flags/uae.svg";
 
 const countriesData = [
     {
-        code: 'gb',
-        country: 'United Kingdom',
+        code: 'uk',
+        country: 'Great Britain',
         language: 'English',
         flag: unitedKingdomFlag,
         currency: 'GBP'
@@ -76,7 +76,7 @@ const countriesData = [
     },
     {
         code: 'ae',
-        country: 'UAE',
+        country: 'Arab Emirates',
         language: 'Arabic',
         flag: uaeFlag,
         currency: 'AED'

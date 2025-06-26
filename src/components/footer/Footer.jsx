@@ -1,3 +1,6 @@
+import { useLocation } from "react-router-dom";
+
+import { Newsletter } from "./Newsletter";
 import { Logo } from "../header/logo/Logo";
 import { About } from "./About";
 import { ForUsers } from "./ForUsers";
@@ -12,9 +15,15 @@ import playStoreIcon from "../../assets/svgs/footer_svgs/play_store.svg";
 
 
 export const Footer = () => {
+    const location = useLocation();
+
+    const showNewsletter = location.pathname === "/" || location.pathname === "/products";
+
+
     return (
-        <footer className="fixed bottom-0 -z-10 bg-[#FFFFFF] max-w-full container mx-auto">
-            <div className="flex justify-between items-start container mx-auto py-14">
+        <footer className="-z-10 bg-[#FFFFFF] max-w-full mx-auto mt-[3rem]">
+            {showNewsletter && <Newsletter />}
+            <div className="flex justify-between items-start max-w-[1180px] mx-auto py-14">
                 <div className="space-y-[1.15rem] w-72">
                     <Logo />
                     <p className="text-[#505050]">Best information about the company gies here but now lorem ipsum is</p>
@@ -34,7 +43,7 @@ export const Footer = () => {
             </div>
 
             <div className="bg-[#EFF2F4] border-t border-[#DEE2E7] py-5">
-                <div className="flex justify-between items-center container mx-auto">
+                <div className="flex justify-between items-center max-w-[1180px] mx-auto">
                     <p className="text-[#606060]">@2023 Ecommerce.</p>
                     <LanguageSelector />
                 </div>
