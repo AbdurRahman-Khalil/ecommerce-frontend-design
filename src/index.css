@@ -37,7 +37,9 @@
 
 
 @layer base {
-  #blue-banner, .primary-gradient {
+
+  #blue-banner,
+  .primary-gradient {
     background: linear-gradient(180deg, hsl(212, 100%, 54%) 0%, hsl(216, 100%, 50%) 100%);
   }
 
@@ -97,4 +99,13 @@
       transform: rotate(360deg);
     }
   }
+
+  /* #cart-product {
+    border-bottom: 1px solid #DEE2E7;
+  }
+
+  #cart-product:last-child {
+    border-bottom: 0;
+  } */
+
 }

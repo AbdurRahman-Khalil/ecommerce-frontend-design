@@ -26,6 +26,7 @@ const productsStore = (set, get) => ({
     addToCart: (product) => {
         try {
             const existingProduct = get().cart.find((item) => item.id === product.id);
+            
             set((state) => {
                 if (existingProduct) {
                     return {
@@ -48,6 +49,7 @@ const productsStore = (set, get) => ({
                     };
                 }
             });
+            
             toast.success(
                 `Product added to cart successfully. ${existingProduct ? `x${existingProduct.quantity + 1}` : ""}
             `);
@@ -70,6 +72,7 @@ const productsStore = (set, get) => ({
                 }
                 return state;
             });
+            
             toast.success("Product removed from cart successfully.");
 
         } catch (err) {
@@ -137,7 +140,7 @@ const productsStore = (set, get) => ({
     },
 
     clearCart: () => {
-        const isAtCheckout = window.location.pathname.includes("/checkout");
+        const isCartEmpty = get().cartLength == 0;
 
         try {
             set(() => ({
@@ -145,16 +148,23 @@ const productsStore = (set, get) => ({
                 cartLength: 0,
             }));
 
-            if (!isAtCheckout) {
-                toast.success("Cart has been cleared successfully.");
+            if (isCartEmpty) {
+                toast("Nothing to remove, cart is emoty.", {
+                    icon: "⚠️",
+                    style: {
+                        background: "#FFF3E7",
+                        color: "#FF9017",
+                        padding: "11px",
+                    },
+                });
+                return;
             }
+
+            toast.success("Cart has been cleared successfully.");
 
         } catch (err) {
             console.error(err);
-
-            if (!isAtCheckout) {
-                toast.error("Failed to clear cart.");
-            }
+            toast.error("Failed to clear cart.");
         }
     },
 
@@ -169,9 +179,11 @@ const productsStore = (set, get) => ({
                 ),
             }));
 
+            toast.success("Product saved successfully.");
+
         } catch (err) {
             console.error(err);
-            toast.error("Failed to Save the Product.");
+            toast.error("Failed to save the Product.");
         }
     },
 
@@ -186,9 +198,11 @@ const productsStore = (set, get) => ({
                 ),
             }));
 
+            toast.success("Product unsaved successfully.");
+
         } catch (err) {
             console.error(err);
-            toast.error("Failed to unSave the Product.");
+            toast.error("Failed to unsaved the Product.");
         }
     },
 

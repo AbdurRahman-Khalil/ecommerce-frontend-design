@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 import { HeroSection } from "../components/main/home/hero_section/HeroSection";
 import { SalesSection } from "../components/main/home/sales_section/SalesSection";
 import { BlockItems } from "../components/main/home/block_items/BlockItems";
@@ -9,6 +11,10 @@ import { CountrySection } from "../components/main/home/country_section/CountryS
 
 
 export const Homepage = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div id="homepage">
             <HeroSection />

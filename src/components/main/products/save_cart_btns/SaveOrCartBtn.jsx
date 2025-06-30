@@ -34,17 +34,18 @@ export const SaveOrCartBtn = ({ product, whichIcon }) => {
     const handleClick = useCallback(() => {
         if (!product) return;
 
+        const newItem = {
+            id: product.id,
+            title: product.title,
+            category: product.category,
+            brand: product.brand,
+            price: product.discountedPrice,
+            totalPrice: product.totalPrice,
+            image: product.image,
+            quantity: product.quantity,
+        };
+
         if (whichIcon === "outlinedCart") {
-            const newItem = {
-                id: product.id,
-                title: product.title,
-                category: product.category,
-                brand: product.brand,
-                price: product.discountedPrice,
-                totalPrice: product.totalPrice,
-                image: product.image,
-                quantity: product.quantity,
-            };
             addToCart(newItem);
         }
 
@@ -52,12 +53,6 @@ export const SaveOrCartBtn = ({ product, whichIcon }) => {
             if (isSaved) {
                 unSaveProduct(product.id);
             } else {
-                const newItem = {
-                    id: product.id,
-                    title: product.title,
-                    price: product.discountedPrice,
-                    image: product.image,
-                };
                 saveProduct(newItem);
             }
         }

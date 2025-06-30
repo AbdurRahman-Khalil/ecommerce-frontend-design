@@ -8,10 +8,10 @@ export const NavItem = ({ destination, navItemImg, navItemText }) => {
 
     return (
         <li>
-            <Link to={destination} className={`group ${destination === "/my_cart" && "relative"}`}>
-                {destination === "/my_cart" && (
+            <Link to={destination} className={`group ${destination === "/my-cart" && "relative"}`}>
+                {destination === "/my-cart" && (
                     <p
-                        className="absolute -top-2 right-0 bg-[#10b981]/50 backdrop-blur 
+                        className="absolute -top-2 right-0 z-10 bg-[#10b981]/50 backdrop-blur 
                             border border-[hsl(160,84%,30%)] w-[1.4rem] h-[1.4rem] rounded-full 
                             flex justify-center items-center text-xs text-[hsl(160,84%,10%)]"
                     >

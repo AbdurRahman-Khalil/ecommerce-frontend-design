@@ -3,6 +3,7 @@ import { Toaster } from "react-hot-toast";
 import { Header } from "./components/header/Header";
 import { Footer } from "./components/footer/Footer";
 import { Main } from "./components/main/Main";
+import { ScrollTop } from "./components/ScrollTop";
 
 
 
@@ -12,10 +13,10 @@ export const App = () => {
     success: {
       style: {
         fontFamily: "inherit",
-        color: "#00B517",           
-        background: "#E5F7E7", 
+        color: "#00B517",
+        background: "#E5F7E7",
         paddingBlock: "11px",
-        gap: "3px",     
+        gap: "3px",
       },
       iconTheme: {
         primary: "#00B517",
@@ -25,10 +26,10 @@ export const App = () => {
     error: {
       style: {
         fontFamily: "inherit",
-        color: "#FA3434",           
-        background: "#FFE0E0",   
-        paddingBlock: "11px",   
-        gap: "3px",     
+        color: "#FA3434",
+        background: "#FFE0E0",
+        paddingBlock: "11px",
+        gap: "3px",
       },
       iconTheme: {
         primary: "#FA3434",
@@ -51,6 +52,7 @@ export const App = () => {
         <Main />
         <Footer />
       </div>
+      <ScrollTop />
     </>
   );
 };

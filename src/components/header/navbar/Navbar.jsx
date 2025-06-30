@@ -14,7 +14,7 @@ export const Navbar = () => {
                 <NavItem destination={"/profile"} navItemImg={profileIcon} navItemText={"Profile"} />
                 <NavItem destination={"/messages"} navItemImg={messageIcon} navItemText={"Message"} />
                 <NavItem destination={"/orders"} navItemImg={ordersIcon} navItemText={"Orders"} />
-                <NavItem destination={"/my_cart"} navItemImg={cartIcon} navItemText={"My cart"} />
+                <NavItem destination={"/my-cart"} navItemImg={cartIcon} navItemText={"My cart"} />
             </ul>
         </nav>
     );

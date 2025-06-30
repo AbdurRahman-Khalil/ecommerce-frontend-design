@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ListProduct } from "./ListProduct";
 
 
-
 export const ListView = ({ filteredProducts }) => {
     return (
         <motion.ul

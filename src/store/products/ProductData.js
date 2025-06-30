@@ -83,6 +83,12 @@ const productsData = [
         "brand": "Rolex",
         "condition": "Brand new",
         "isSaved": false,
+        "features": [
+            "Up to 50 meters, suitable for swimming and light snorkeling.",
+            "Durable and rust-resistant, with a polished finish.",
+            "Up to 2 years of battery life on a single charge.",
+            "Glow-in-the-dark feature for easy time reading at night."
+        ],
     },
     {
         "id": 2,
@@ -99,6 +105,12 @@ const productsData = [
         "brand": "Rolex",
         "condition": "Old items",
         "isSaved": false,
+        "features": [
+            "Up to 50 meters, suitable for swimming and light snorkeling.",
+            "Durable and rust-resistant, with a polished finish.",
+            "Up to 2 years of battery life on a single charge.",
+            "Glow-in-the-dark feature for easy time reading at night."
+        ],
     },
     {
         "id": 3,
@@ -115,6 +127,12 @@ const productsData = [
         "brand": "Rolex",
         "condition": "Refurbished",
         "isSaved": false,
+        "features": [
+            "Up to 50 meters, suitable for swimming and light snorkeling.",
+            "Durable and rust-resistant, with a polished finish.",
+            "Up to 2 years of battery life on a single charge.",
+            "Glow-in-the-dark feature for easy time reading at night."
+        ],
     },
     {
         "id": 4,
@@ -131,6 +149,12 @@ const productsData = [
         "brand": "Patek",
         "condition": "Brand new",
         "isSaved": false,
+        "features": [
+            "Up to 50 meters, suitable for swimming and light snorkeling.",
+            "Durable and rust-resistant, with a polished finish.",
+            "Up to 2 years of battery life on a single charge.",
+            "Glow-in-the-dark feature for easy time reading at night."
+        ],
     },
     {
         "id": 5,
@@ -147,6 +171,12 @@ const productsData = [
         "brand": "Patek",
         "condition": "Old items",
         "isSaved": false,
+        "features": [
+            "Up to 50 meters, suitable for swimming and light snorkeling.",
+            "Durable and rust-resistant, with a polished finish.",
+            "Up to 2 years of battery life on a single charge.",
+            "Glow-in-the-dark feature for easy time reading at night."
+        ],
     },
     {
         "id": 6,
@@ -163,6 +193,12 @@ const productsData = [
         "brand": "Patek",
         "condition": "Refurbished",
         "isSaved": false,
+        "features": [
+            "Up to 50 meters, suitable for swimming and light snorkeling.",
+            "Durable and rust-resistant, with a polished finish.",
+            "Up to 2 years of battery life on a single charge.",
+            "Glow-in-the-dark feature for easy time reading at night."
+        ],
     },
     {
         "id": 7,
@@ -179,6 +215,12 @@ const productsData = [
         "brand": "Philippe",
         "condition": "Brand new",
         "isSaved": false,
+        "features": [
+            "Up to 50 meters, suitable for swimming and light snorkeling.",
+            "Durable and rust-resistant, with a polished finish.",
+            "Up to 2 years of battery life on a single charge.",
+            "Glow-in-the-dark feature for easy time reading at night."
+        ],
     },
     {
         "id": 8,
@@ -195,6 +237,12 @@ const productsData = [
         "brand": "Philippe",
         "condition": "Old items",
         "isSaved": false,
+        "features": [
+            "Up to 50 meters, suitable for swimming and light snorkeling.",
+            "Durable and rust-resistant, with a polished finish.",
+            "Up to 2 years of battery life on a single charge.",
+            "Glow-in-the-dark feature for easy time reading at night."
+        ],
     },
     {
         "id": 9,
@@ -211,6 +259,12 @@ const productsData = [
         "brand": "Philippe",
         "condition": "Refurbished",
         "isSaved": false,
+        "features": [
+            "Up to 50 meters, suitable for swimming and light snorkeling.",
+            "Durable and rust-resistant, with a polished finish.",
+            "Up to 2 years of battery life on a single charge.",
+            "Glow-in-the-dark feature for easy time reading at night."
+        ],
     },
     {
         "id": 10,
@@ -227,6 +281,12 @@ const productsData = [
         "brand": "Apple",
         "condition": "Brand new",
         "isSaved": false,
+        "features": [
+            "Up to 50 meters, suitable for swimming and light snorkeling.",
+            "Durable and rust-resistant, with a polished finish.",
+            "Up to 2 years of battery life on a single charge.",
+            "Glow-in-the-dark feature for easy time reading at night."
+        ],
     },
 
     // //? Glasses
@@ -245,6 +305,12 @@ const productsData = [
         "brand": "Burberry",
         "condition": "Brand new",
         "isSaved": false,
+        "features": [
+            "Shields your eyes from harmful UVA and UVB rays.",
+            "Durable lenses that resist daily wear and tear.",
+            "Made with comfort-focused materials for all-day use.",
+            "Stylish and versatile for both men and women."
+        ],
     },
     {
         "id": 12,
@@ -261,6 +327,12 @@ const productsData = [
         "brand": "Burberry",
         "condition": "Old items",
         "isSaved": false,
+        "features": [
+            "Shields your eyes from harmful UVA and UVB rays.",
+            "Durable lenses that resist daily wear and tear.",
+            "Made with comfort-focused materials for all-day use.",
+            "Stylish and versatile for both men and women."
+        ],
     },
     {
         "id": 13,
@@ -277,6 +349,12 @@ const productsData = [
         "brand": "Burberry",
         "condition": "Refurbished",
         "isSaved": false,
+        "features": [
+            "Shields your eyes from harmful UVA and UVB rays.",
+            "Durable lenses that resist daily wear and tear.",
+            "Made with comfort-focused materials for all-day use.",
+            "Stylish and versatile for both men and women."
+        ],
     },
     {
         "id": 14,
@@ -293,6 +371,12 @@ const productsData = [
         "brand": "Gucci",
         "condition": "Brand new",
         "isSaved": false,
+        "features": [
+            "Shields your eyes from harmful UVA and UVB rays.",
+            "Durable lenses that resist daily wear and tear.",
+            "Made with comfort-focused materials for all-day use.",
+            "Stylish and versatile for both men and women."
+        ],
     },
     {
         "id": 15,
@@ -309,6 +393,12 @@ const productsData = [
         "brand": "Gucci",
         "condition": "Old items",
         "isSaved": false,
+        "features": [
+            "Shields your eyes from harmful UVA and UVB rays.",
+            "Durable lenses that resist daily wear and tear.",
+            "Made with comfort-focused materials for all-day use.",
+            "Stylish and versatile for both men and women."
+        ],
     },
     {
         "id": 16,
@@ -325,6 +415,12 @@ const productsData = [
         "brand": "Gucci",
         "condition": "Refurbished",
         "isSaved": false,
+        "features": [
+            "Shields your eyes from harmful UVA and UVB rays.",
+            "Durable lenses that resist daily wear and tear.",
+            "Made with comfort-focused materials for all-day use.",
+            "Stylish and versatile for both men and women."
+        ],
     },
     {
         "id": 17,
@@ -341,6 +437,12 @@ const productsData = [
         "brand": "Persol",
         "condition": "Brand new",
         "isSaved": false,
+        "features": [
+            "Shields your eyes from harmful UVA and UVB rays.",
+            "Durable lenses that resist daily wear and tear.",
+            "Made with comfort-focused materials for all-day use.",
+            "Stylish and versatile for both men and women."
+        ],
     },
     {
         "id": 18,
@@ -357,6 +459,12 @@ const productsData = [
         "brand": "Persol",
         "condition": "Old items",
         "isSaved": false,
+        "features": [
+            "Shields your eyes from harmful UVA and UVB rays.",
+            "Durable lenses that resist daily wear and tear.",
+            "Made with comfort-focused materials for all-day use.",
+            "Stylish and versatile for both men and women."
+        ],
     },
     {
         "id": 19,
@@ -373,6 +481,12 @@ const productsData = [
         "brand": "Persol",
         "condition": "Refurbished",
         "isSaved": false,
+        "features": [
+            "Shields your eyes from harmful UVA and UVB rays.",
+            "Durable lenses that resist daily wear and tear.",
+            "Made with comfort-focused materials for all-day use.",
+            "Stylish and versatile for both men and women."
+        ],
     },
     {
         "id": 20,
@@ -389,6 +503,12 @@ const productsData = [
         "brand": "Persol",
         "condition": "Brand new",
         "isSaved": false,
+        "features": [
+            "Shields your eyes from harmful UVA and UVB rays.",
+            "Durable lenses that resist daily wear and tear.",
+            "Made with comfort-focused materials for all-day use.",
+            "Stylish and versatile for both men and women."
+        ],
     },
 
     // //? Shoes
@@ -407,6 +527,12 @@ const productsData = [
         "brand": "Nike",
         "condition": "Brand new",
         "isSaved": false,
+        "features": [
+            "Promotes airflow to keep feet cool and dry.",
+            "Enhanced cushioning for all-day comfort.",
+            "Provides excellent grip on multiple surfaces.",
+            "Modern look suitable for both casual and athletic wear."
+        ],
     },
     {
         "id": 22,
@@ -423,6 +549,12 @@ const productsData = [
         "brand": "Nike",
         "condition": "Old items",
         "isSaved": false,
+        "features": [
+            "Promotes airflow to keep feet cool and dry.",
+            "Enhanced cushioning for all-day comfort.",
+            "Provides excellent grip on multiple surfaces.",
+            "Modern look suitable for both casual and athletic wear."
+        ],
     },
     {
         "id": 23,
@@ -439,6 +571,12 @@ const productsData = [
         "brand": "Nike",
         "condition": "Refurbished",
         "isSaved": false,
+        "features": [
+            "Promotes airflow to keep feet cool and dry.",
+            "Enhanced cushioning for all-day comfort.",
+            "Provides excellent grip on multiple surfaces.",
+            "Modern look suitable for both casual and athletic wear."
+        ],
     },
     {
         "id": 24,
@@ -455,6 +593,12 @@ const productsData = [
         "brand": "Adidas",
         "condition": "Brand new",
         "isSaved": false,
+        "features": [
+            "Promotes airflow to keep feet cool and dry.",
+            "Enhanced cushioning for all-day comfort.",
+            "Provides excellent grip on multiple surfaces.",
+            "Modern look suitable for both casual and athletic wear."
+        ],
     },
     {
         "id": 25,
@@ -471,6 +615,12 @@ const productsData = [
         "brand": "Adidas",
         "condition": "Old items",
         "isSaved": false,
+        "features": [
+            "Promotes airflow to keep feet cool and dry.",
+            "Enhanced cushioning for all-day comfort.",
+            "Provides excellent grip on multiple surfaces.",
+            "Modern look suitable for both casual and athletic wear."
+        ],
     },
     {
         "id": 26,
@@ -487,6 +637,12 @@ const productsData = [
         "brand": "Adidas",
         "condition": "Refurbished",
         "isSaved": false,
+        "features": [
+            "Promotes airflow to keep feet cool and dry.",
+            "Enhanced cushioning for all-day comfort.",
+            "Provides excellent grip on multiple surfaces.",
+            "Modern look suitable for both casual and athletic wear."
+        ],
     },
     {
         "id": 27,
@@ -503,6 +659,12 @@ const productsData = [
         "brand": "Puma",
         "condition": "Brand new",
         "isSaved": false,
+        "features": [
+            "Promotes airflow to keep feet cool and dry.",
+            "Enhanced cushioning for all-day comfort.",
+            "Provides excellent grip on multiple surfaces.",
+            "Modern look suitable for both casual and athletic wear."
+        ],
     },
     {
         "id": 28,
@@ -519,6 +681,12 @@ const productsData = [
         "brand": "Puma",
         "condition": "Old items",
         "isSaved": false,
+        "features": [
+            "Promotes airflow to keep feet cool and dry.",
+            "Enhanced cushioning for all-day comfort.",
+            "Provides excellent grip on multiple surfaces.",
+            "Modern look suitable for both casual and athletic wear."
+        ],
     },
     {
         "id": 29,
@@ -535,14 +703,20 @@ const productsData = [
         "brand": "Puma",
         "condition": "Refurbished",
         "isSaved": false,
+        "features": [
+            "Promotes airflow to keep feet cool and dry.",
+            "Enhanced cushioning for all-day comfort.",
+            "Provides excellent grip on multiple surfaces.",
+            "Modern look suitable for both casual and athletic wear."
+        ],
     },
     {
         "id": 30,
         "title": "Faux Fur Winter Boots",
         "description": "Stay warm and stylish with these insulated winter boots lined with faux fur. Waterproof membranes, breathable mesh panels, and grippy outsoles. Weight: 2.5 lbs, heel-to-toe length: 13 inches.",
-        "originalPrice": 130, 
-        "discountedPrice": 90.42, 
-        "totalPrice": 90.42, 
+        "originalPrice": 130,
+        "discountedPrice": 90.42,
+        "totalPrice": 90.42,
         "rating": 0,
         "usersRatings": [],
         "category": "Shoes",
@@ -551,6 +725,12 @@ const productsData = [
         "brand": "Puma",
         "condition": "Brand new",
         "isSaved": false,
+        "features": [
+            "Promotes airflow to keep feet cool and dry.",
+            "Enhanced cushioning for all-day comfort.",
+            "Provides excellent grip on multiple surfaces.",
+            "Modern look suitable for both casual and athletic wear."
+        ],
     },
 
     // //? Hoodies
@@ -558,9 +738,9 @@ const productsData = [
         "id": 31,
         "title": "Black Zip-Up Hoodie",
         "description": "Stay cozy with this soft black hoodie featuring a front zipper and adjustable drawstrings. Made from premium cotton blend for comfort and durability. Fit: regular, fabric thickness: 280gsm.",
-        "originalPrice": 60, 
-        "discountedPrice": 41.58, 
-        "totalPrice": 41.58, 
+        "originalPrice": 60,
+        "discountedPrice": 41.58,
+        "totalPrice": 41.58,
         "rating": 0,
         "usersRatings": [],
         "category": "Hoodies",
@@ -569,6 +749,12 @@ const productsData = [
         "brand": "Nike",
         "condition": "Brand new",
         "isSaved": false,
+        "features": [
+            "Soft, breathable fabric with a comfortable fleece lining.",
+            "Customize your fit for added warmth and style.",
+            "Front pocket for hand warmth and storage.",
+            "Maintains size and shape even after multiple washes."
+        ],
     },
     {
         "id": 32,
@@ -585,6 +771,12 @@ const productsData = [
         "brand": "Nike",
         "condition": "Old items",
         "isSaved": false,
+        "features": [
+            "Soft, breathable fabric with a comfortable fleece lining.",
+            "Customize your fit for added warmth and style.",
+            "Front pocket for hand warmth and storage.",
+            "Maintains size and shape even after multiple washes."
+        ],
     },
     {
         "id": 33,
@@ -601,6 +793,12 @@ const productsData = [
         "brand": "Nike",
         "condition": "Refurbished",
         "isSaved": false,
+        "features": [
+            "Soft, breathable fabric with a comfortable fleece lining.",
+            "Customize your fit for added warmth and style.",
+            "Front pocket for hand warmth and storage.",
+            "Maintains size and shape even after multiple washes."
+        ],
     },
     {
         "id": 34,
@@ -617,6 +815,12 @@ const productsData = [
         "brand": "Adidas",
         "condition": "Brand new",
         "isSaved": false,
+        "features": [
+            "Soft, breathable fabric with a comfortable fleece lining.",
+            "Customize your fit for added warmth and style.",
+            "Front pocket for hand warmth and storage.",
+            "Maintains size and shape even after multiple washes."
+        ],
     },
     {
         "id": 35,
@@ -633,6 +837,12 @@ const productsData = [
         "brand": "Adidas",
         "condition": "Old items",
         "isSaved": false,
+        "features": [
+            "Soft, breathable fabric with a comfortable fleece lining.",
+            "Customize your fit for added warmth and style.",
+            "Front pocket for hand warmth and storage.",
+            "Maintains size and shape even after multiple washes."
+        ],
     },
     {
         "id": 36,
@@ -649,6 +859,12 @@ const productsData = [
         "brand": "Adidas",
         "condition": "Refurbished",
         "isSaved": false,
+        "features": [
+            "Soft, breathable fabric with a comfortable fleece lining.",
+            "Customize your fit for added warmth and style.",
+            "Front pocket for hand warmth and storage.",
+            "Maintains size and shape even after multiple washes."
+        ],
     },
     {
         "id": 37,
@@ -665,6 +881,12 @@ const productsData = [
         "brand": "Champion",
         "condition": "Brand new",
         "isSaved": false,
+        "features": [
+            "Soft, breathable fabric with a comfortable fleece lining.",
+            "Customize your fit for added warmth and style.",
+            "Front pocket for hand warmth and storage.",
+            "Maintains size and shape even after multiple washes."
+        ],
     },
     {
         "id": 38,
@@ -681,6 +903,12 @@ const productsData = [
         "brand": "Champion",
         "condition": "Old items",
         "isSaved": false,
+        "features": [
+            "Soft, breathable fabric with a comfortable fleece lining.",
+            "Customize your fit for added warmth and style.",
+            "Front pocket for hand warmth and storage.",
+            "Maintains size and shape even after multiple washes."
+        ],
     },
     {
         "id": 39,
@@ -697,6 +925,12 @@ const productsData = [
         "brand": "Champion",
         "condition": "Refurbished",
         "isSaved": false,
+        "features": [
+            "Soft, breathable fabric with a comfortable fleece lining.",
+            "Customize your fit for added warmth and style.",
+            "Front pocket for hand warmth and storage.",
+            "Maintains size and shape even after multiple washes."
+        ],
     },
     {
         "id": 40,
@@ -713,6 +947,12 @@ const productsData = [
         "brand": "Champion",
         "condition": "Brand new",
         "isSaved": false,
+        "features": [
+            "Soft, breathable fabric with a comfortable fleece lining.",
+            "Customize your fit for added warmth and style.",
+            "Front pocket for hand warmth and storage.",
+            "Maintains size and shape even after multiple washes."
+        ],
     },
 
     // //? Mobiles
@@ -731,6 +971,12 @@ const productsData = [
         "brand": "Samsung",
         "condition": "Brand new",
         "isSaved": false,
+        "features": [
+            "Crystal-clear 6.5” screen with vibrant colors and deep blacks.",
+            "64MP main camera with ultra-wide and macro lenses.",
+            "50% charge in just 30 minutes with included fast charger.",
+            "Supports microSD cards up to 1TB."
+        ],
     },
     {
         "id": 42,
@@ -747,6 +993,12 @@ const productsData = [
         "brand": "Apple",
         "condition": "Old items",
         "isSaved": false,
+        "features": [
+            "Crystal-clear 6.5” screen with vibrant colors and deep blacks.",
+            "64MP main camera with ultra-wide and macro lenses.",
+            "50% charge in just 30 minutes with included fast charger.",
+            "Supports microSD cards up to 1TB."
+        ],
     },
     {
         "id": 43,
@@ -763,6 +1015,12 @@ const productsData = [
         "brand": "Google",
         "condition": "Refurbished",
         "isSaved": false,
+        "features": [
+            "Crystal-clear 6.5” screen with vibrant colors and deep blacks.",
+            "64MP main camera with ultra-wide and macro lenses.",
+            "50% charge in just 30 minutes with included fast charger.",
+            "Supports microSD cards up to 1TB."
+        ],
     },
     {
         "id": 44,
@@ -779,6 +1037,12 @@ const productsData = [
         "brand": "OnePlus",
         "condition": "Brand new",
         "isSaved": false,
+        "features": [
+            "Crystal-clear 6.5” screen with vibrant colors and deep blacks.",
+            "64MP main camera with ultra-wide and macro lenses.",
+            "50% charge in just 30 minutes with included fast charger.",
+            "Supports microSD cards up to 1TB."
+        ],
     },
     {
         "id": 45,
@@ -795,6 +1059,12 @@ const productsData = [
         "brand": "Xiaomi",
         "condition": "Brand new",
         "isSaved": false,
+        "features": [
+            "Crystal-clear 6.5” screen with vibrant colors and deep blacks.",
+            "64MP main camera with ultra-wide and macro lenses.",
+            "50% charge in just 30 minutes with included fast charger.",
+            "Supports microSD cards up to 1TB."
+        ],
     },
     {
         "id": 46,
@@ -811,6 +1081,12 @@ const productsData = [
         "brand": "Oppo",
         "condition": "Old items",
         "isSaved": false,
+        "features": [
+            "Crystal-clear 6.5” screen with vibrant colors and deep blacks.",
+            "64MP main camera with ultra-wide and macro lenses.",
+            "50% charge in just 30 minutes with included fast charger.",
+            "Supports microSD cards up to 1TB."
+        ],
     },
     {
         "id": 47,
@@ -827,6 +1103,12 @@ const productsData = [
         "brand": "Sony",
         "condition": "Refurbished",
         "isSaved": false,
+        "features": [
+            "Crystal-clear 6.5” screen with vibrant colors and deep blacks.",
+            "64MP main camera with ultra-wide and macro lenses.",
+            "50% charge in just 30 minutes with included fast charger.",
+            "Supports microSD cards up to 1TB."
+        ],
     },
     {
         "id": 48,
@@ -843,6 +1125,12 @@ const productsData = [
         "brand": "Motorola",
         "condition": "Brand new",
         "isSaved": false,
+        "features": [
+            "Crystal-clear 6.5” screen with vibrant colors and deep blacks.",
+            "64MP main camera with ultra-wide and macro lenses.",
+            "50% charge in just 30 minutes with included fast charger.",
+            "Supports microSD cards up to 1TB."
+        ],
     },
     {
         "id": 49,
@@ -859,6 +1147,12 @@ const productsData = [
         "brand": "Asus",
         "condition": "Old items",
         "isSaved": false,
+        "features": [
+            "Crystal-clear 6.5” screen with vibrant colors and deep blacks.",
+            "64MP main camera with ultra-wide and macro lenses.",
+            "50% charge in just 30 minutes with included fast charger.",
+            "Supports microSD cards up to 1TB."
+        ],
     },
     {
         "id": 50,
@@ -875,6 +1169,12 @@ const productsData = [
         "brand": "Realme",
         "condition": "Refurbished",
         "isSaved": false,
+        "features": [
+            "Crystal-clear 6.5” screen with vibrant colors and deep blacks.",
+            "64MP main camera with ultra-wide and macro lenses.",
+            "50% charge in just 30 minutes with included fast charger.",
+            "Supports microSD cards up to 1TB."
+        ],
     },
 
     // //? Laptops
@@ -893,6 +1193,12 @@ const productsData = [
         "brand": "Apple",
         "condition": "Brand new",
         "isSaved": false,
+        "features": [
+            "High-performance CPU for multitasking and speed.",
+            "Fast boot times and smooth performance for demanding tasks.",
+            "15.6” screen with anti-glare coating and vivid color accuracy.",
+            "Type comfortably in low-light environments."
+        ],
     },
     {
         "id": 52,
@@ -909,6 +1215,12 @@ const productsData = [
         "brand": "Dell",
         "condition": "Old items",
         "isSaved": false,
+        "features": [
+            "High-performance CPU for multitasking and speed.",
+            "Fast boot times and smooth performance for demanding tasks.",
+            "15.6” screen with anti-glare coating and vivid color accuracy.",
+            "Type comfortably in low-light environments."
+        ],
     },
     {
         "id": 53,
@@ -925,6 +1237,12 @@ const productsData = [
         "brand": "Lenovo",
         "condition": "Refurbished",
         "isSaved": false,
+        "features": [
+            "High-performance CPU for multitasking and speed.",
+            "Fast boot times and smooth performance for demanding tasks.",
+            "15.6” screen with anti-glare coating and vivid color accuracy.",
+            "Type comfortably in low-light environments."
+        ],
     },
     {
         "id": 54,
@@ -941,6 +1259,12 @@ const productsData = [
         "brand": "HP",
         "condition": "Brand new",
         "isSaved": false,
+        "features": [
+            "High-performance CPU for multitasking and speed.",
+            "Fast boot times and smooth performance for demanding tasks.",
+            "15.6” screen with anti-glare coating and vivid color accuracy.",
+            "Type comfortably in low-light environments."
+        ],
     },
     {
         "id": 55,
@@ -957,6 +1281,12 @@ const productsData = [
         "brand": "Asus",
         "condition": "Old items",
         "isSaved": false,
+        "features": [
+            "High-performance CPU for multitasking and speed.",
+            "Fast boot times and smooth performance for demanding tasks.",
+            "15.6” screen with anti-glare coating and vivid color accuracy.",
+            "Type comfortably in low-light environments."
+        ],
     },
     {
         "id": 56,
@@ -973,6 +1303,12 @@ const productsData = [
         "brand": "Acer",
         "condition": "Refurbished",
         "isSaved": false,
+        "features": [
+            "High-performance CPU for multitasking and speed.",
+            "Fast boot times and smooth performance for demanding tasks.",
+            "15.6” screen with anti-glare coating and vivid color accuracy.",
+            "Type comfortably in low-light environments."
+        ],
     },
     {
         "id": 57,
@@ -989,6 +1325,12 @@ const productsData = [
         "brand": "Microsoft",
         "condition": "Brand new",
         "isSaved": false,
+        "features": [
+            "High-performance CPU for multitasking and speed.",
+            "Fast boot times and smooth performance for demanding tasks.",
+            "15.6” screen with anti-glare coating and vivid color accuracy.",
+            "Type comfortably in low-light environments."
+        ],
     },
     {
         "id": 58,
@@ -1005,6 +1347,12 @@ const productsData = [
         "brand": "MSI",
         "condition": "Old items",
         "isSaved": false,
+        "features": [
+            "High-performance CPU for multitasking and speed.",
+            "Fast boot times and smooth performance for demanding tasks.",
+            "15.6” screen with anti-glare coating and vivid color accuracy.",
+            "Type comfortably in low-light environments."
+        ],
     },
     {
         "id": 59,
@@ -1021,6 +1369,12 @@ const productsData = [
         "brand": "Razer",
         "condition": "Refurbished",
         "isSaved": false,
+        "features": [
+            "High-performance CPU for multitasking and speed.",
+            "Fast boot times and smooth performance for demanding tasks.",
+            "15.6” screen with anti-glare coating and vivid color accuracy.",
+            "Type comfortably in low-light environments."
+        ],
     },
     {
         "id": 60,
@@ -1037,6 +1391,12 @@ const productsData = [
         "brand": "Samsung",
         "condition": "Brand new",
         "isSaved": false,
+        "features": [
+            "High-performance CPU for multitasking and speed.",
+            "Fast boot times and smooth performance for demanding tasks.",
+            "15.6” screen with anti-glare coating and vivid color accuracy.",
+            "Type comfortably in low-light environments."
+        ],
     },
 ];
 

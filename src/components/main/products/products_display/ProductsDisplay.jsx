@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 
 import useProductsStore from "../../../../store/products/ProductsStore";
+import useSearchStore from "../../../../store/search/SearchStore";
 
 import { DisplayRangeInfo } from "./DisplayRangeInfo";
 import { CustomCheckbox } from "../CustomCheckbox";
@@ -15,6 +16,7 @@ import { PaginationNumbers } from "./PaginationNumbers";
 export const ProductsDisplay = ({ filters }) => {
     const products = useProductsStore((state) => state.products);
     const viewMode = useProductsStore((state) => state.viewMode);
+    const searchQuery = useSearchStore((state) => state.searchQuery);
     const [currentPage, setCurrentPage] = useState(1);
     const [productsPerPage, setProductsPerPage] = useState(10);
 
@@ -31,6 +33,7 @@ export const ProductsDisplay = ({ filters }) => {
     const filteredProducts = products.filter((product) => {
         const { category, brand, minPrice, maxPrice, condition, ratings } = filters;
 
+        // Filter products
         const matchCategory = category.length === 0 || category.includes(product.category);
         const matchBrand = brand.length === 0 || brand.includes(product.brand);
         const matchPrice = product.discountedPrice >= minPrice && product.discountedPrice <= maxPrice;
@@ -39,7 +42,12 @@ export const ProductsDisplay = ({ filters }) => {
             ratings.length === 0 ||
             ratings.some((star) => isRatingInRange(product.rating ?? 0, star));
 
-        return matchCategory && matchBrand && matchPrice && matchCondition && matchRating;
+        // Search products 
+        const searchedProducts = searchQuery === ""
+            ? product
+            : product.title.toLowerCase().includes(searchQuery);
+
+        return matchCategory && matchBrand && matchPrice && matchCondition && matchRating && searchedProducts;
     });
 
 
@@ -125,25 +133,6 @@ export const ProductsDisplay = ({ filters }) => {
                 </div>
             )}
         </main>
-    )
-}
+    );
+};
 
-
-
-
-
-
-
-// {
-//     filteredProducts.length === 0 ? (
-//         <div className="text-gray-500 text-center mt-12">
-//             <p className="text-lg font-medium">
-//                 No products match your current filters — Try adjusting them to see more results.
-//             </p>
-//         </div>
-//     ) : viewMode === "list" ? (
-//         <ListView filteredProducts={filteredProducts} />
-//     ) : (
-//     <GridView filteredProducts={filteredProducts} />
-// )
-// }
