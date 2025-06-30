@@ -26,7 +26,7 @@ export const SellerInfo = ({ product }) => {
             title: product.title,
             category: product.category,
             brand: product.brand,
-            price: product.price,
+            price: product.discountedPrice,
             totalPrice: product.totalPrice,
             image: product.image,
             quantity: product.quantity,
