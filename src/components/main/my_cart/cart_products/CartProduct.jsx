@@ -39,7 +39,7 @@ export const CartProduct = ({ product }) => {
         <div id="cart-product" className="flex justify-between pb-5 border-b border-[hsl(213,16%,83%)]">
             <div className="flex gap-3">
                 <div className="w-20 h-20 border border-[#E0E0E0] rounded-md">
-                    <img src={product.image} className="max-w-full h-full object-cover rounded-md" alt={`${product.title}'s image`} />
+                    <img src={product.image} className="w-full h-full object-cover rounded-md" alt={`${product.title}'s image`} />
                 </div>
                 <div>
                     <p className="font-medium text-[#1c1c1c] leading-[1.375rem] mb-1.5">{product.title}</p>
