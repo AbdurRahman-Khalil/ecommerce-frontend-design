@@ -70,7 +70,7 @@ export const ProductsDisplay = ({ filters }) => {
     const prevFiltersRef = useRef("");
 
     useEffect(() => {
-        const currentFilters = JSON.stringify(filters);
+        const currentFilters = JSON.stringify(filters) + searchQuery;
         const prevFilters = prevFiltersRef.current;
 
         // Only reset page if filters truly changed
@@ -78,7 +78,7 @@ export const ProductsDisplay = ({ filters }) => {
             setCurrentPage(1);
             prevFiltersRef.current = currentFilters;
         }
-    }, [filters]);
+    }, [filters, searchQuery]);
 
     // 🔝 Scroll to top when pagination changes
     useEffect(() => {
