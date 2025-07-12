@@ -20,7 +20,7 @@ export const Collapsible = ({ title, children, initialOpen = true, marginBottom 
 
 
     return (
-        <div className={`border-t border-[#DEE2E7] ${isOpen ? "pt-4" : "pt-5"} transitions`}>
+        <div className={`border-t border-[#DEE2E7] px-[0.175rem] max-[934px]:px-5 ${isOpen ? "pt-4" : "pt-5"} transitions`}>
             {/* Clickable Header */}
             <div
                 className={`flex justify-between items-center cursor-pointer ${marginBottom}`}

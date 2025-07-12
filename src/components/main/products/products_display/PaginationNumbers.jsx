@@ -15,9 +15,10 @@ export const PaginationNumbers = ({ setCurrentPage, currentPage, totalPages }) =
                 <button
                     key={idx}
                     onClick={() => setCurrentPage(idx + 1)}
-                    className={`font-medium w-11 h-10 border border-[#DEE2E7] transitions
-                                ${currentPage === idx + 1 ? "bg-[#EFF2F4] text-[#8B96A5]" : "bg-white text-[#1C1C1C] hover:bg-[#EFF2F4]"
-                        }`}
+                    className={`font-medium w-11 h-10 border border-[#DEE2E7] transitions 
+                                ${currentPage === idx + 1 ? "bg-[#EFF2F4] text-[#8B96A5]" : "bg-white text-[#1C1C1C] hover:bg-[#EFF2F4]"}
+                                max-[391px]:w-10 max-[391px]:h-9
+                    `}
                 >
                     {idx + 1}
                 </button>

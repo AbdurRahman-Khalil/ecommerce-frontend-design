@@ -2,7 +2,7 @@ import { ShopNowBtn } from "../ShopNowBtn";
 import { BlockItem } from "./BlockItem";
 
 import homeOutdoor from "../../../../assets/images/home_outdoor.jpg";
-import consumerElectronicsGadgets from "../../../../assets/images/consumer_electronics_gadgets.png";
+import consumerElectronicsGadgets from "../../../../assets/images/consumer_electronics_gadgets.jpg";
 
 import interiorImg1 from "../../../../assets/images/interior/1.png";
 import interiorImg3 from "../../../../assets/images/interior/3.png";
@@ -49,16 +49,34 @@ export const BlockItems = () => {
 
 
     return (
-        <section aria-label="Product Categories" className="min-h-[257px] mt-[1.25rem] space-y-[1.25rem]">
-            <div id="interior-items" className="flex justify-between bg-white border border-[#DEE2E7] rounded-md">
-                <div className="relative max-w-[17.5rem]">
-                    <img src={homeOutdoor} className="max-w-full h-[257px] object-right object-cover rounded-s-md" alt="homeOutdoor image" />
-                    <div className="absolute inset-0 bg-[#FFE8BA66] rounded-s-md px-[1.15rem] py-5">
-                        <h4 className="text-xl font-semibold pr-16 mb-[1.15rem] leading-[1.65rem]">Home and outdoor</h4>
-                        <ShopNowBtn btnWidth={"w-[7.6875rem]"} />
+        <section
+            aria-label="Product Categories"
+            className="min-h-[257px] mt-[1.25rem] space-y-[1.25rem]"
+        >
+            <div
+                id="interior-items"
+                className="flex justify-between bg-white border border-[#DEE2E7] rounded-md
+                max-[1212px]:border-x-0 max-[1212px]:rounded-none max-[1201px]:flex-wrap"
+            >
+                <div className="relative w-[20.5rem] max-[1201px]:w-full">
+                    <img
+                        src={homeOutdoor}
+                        className="w-full h-[257px] object-cover rounded-s-md max-[1212px]:rounded-s-none"
+                        alt="homeOutdoor image"
+                    />
+                    {/* bg-[#ffe7b866] */}
+                    <div className="absolute inset-0 bg-[#ffffff5d] px-[1.15rem] py-5 rounded-s-md max-[1212px]:rounded-s-none flex justify-center items-center">
+                        <div className="text-center">
+                            <h4
+                                className="text-[1.35rem] font-semibold mb-[1.2rem] leading-[1.65rem]"
+                            >
+                                Home and outdoor
+                            </h4>
+                            <ShopNowBtn btnWidth={"w-[7.6875rem]"} />
+                        </div>
                     </div>
                 </div>
-                <div className="grid grid-cols-4 p-0.5 pl-0">
+                <div className="grid grid-cols-1 min-[435px]:grid-cols-2 min-[663px]:grid-cols-3 min-[878px]:grid-cols-4 p-0.5 max-[1201px]:w-full">
                     {
                         interiorItems.map((item) => (
                             <BlockItem key={item.id} item={item} />
@@ -67,15 +85,29 @@ export const BlockItems = () => {
                 </div>
             </div>
 
-            <div id="tech-items" className="flex justify-between bg-white border border-[#DEE2E7] rounded-md">
-                <div className="relative min-w-[17.5rem]">
-                    <img src={consumerElectronicsGadgets} className="w-full h-[257px] object-bottom object-cover rounded-s-md" alt="consumerElectronicsGadgets image" />
-                    <div className="absolute inset-0 bg-[#FFFFFF4D] rounded-s-md px-[1.15rem] py-5">
-                        <h4 className="text-xl font-semibold pr-16 mb-[1.35rem] leading-[1.65rem]">Consumer electronics and gadgets</h4>
-                        <ShopNowBtn btnWidth={"w-[7.6875rem]"} />
+            <div
+                id="tech-items"
+                className="flex justify-between bg-white border border-[#DEE2E7] rounded-md
+                max-[1212px]:border-x-0 max-[1212px]:rounded-none max-[1201px]:flex-wrap"
+            >
+                <div className="relative w-[20.5rem] max-[1201px]:w-full">
+                    <img
+                        src={consumerElectronicsGadgets}
+                        className="w-full h-[257px] object-bottom object-cover rounded-s-md max-[1212px]:rounded-s-none"
+                        alt="consumerElectronicsGadgets image"
+                    />
+                    <div className="absolute inset-0 bg-[#ffffff5d] px-[1.15rem] py-5 rounded-s-md max-[1212px]:rounded-s-none flex justify-center items-center">
+                        <div className="text-center">
+                            <h4
+                                className="text-[1.35rem] font-semibold w-[14.36rem] mb-[1.35rem] leading-[1.65rem]"
+                            >
+                                Consumer electronics and gadgets
+                            </h4>
+                            <ShopNowBtn btnWidth={"w-[7.6875rem]"} />
+                        </div>
                     </div>
                 </div>
-                <div className="grid grid-cols-4 p-0.5 pl-0">
+                <div className="grid grid-cols-1 min-[435px]:grid-cols-2 min-[663px]:grid-cols-3 min-[878px]:grid-cols-4 p-0.5 max-[1201px]:w-full">
                     {
                         techItems.map((item) => (
                             <BlockItem key={item.id} item={item} />

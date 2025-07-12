@@ -1,6 +1,6 @@
 import useProductsStore from "../../../../store/products/ProductsStore";
 
-import { GreenWhiteCart } from "./GreenWhiteCart";
+import { CustomOutlinedCartIcon } from "./CustomOutlinedCartIcon";
 
 
 
@@ -53,8 +53,8 @@ export const SavedProduct = ({ product }) => {
                         </span>
                         {
                             isInCart
-                                ? <GreenWhiteCart cartColor={"#ffffff"} />
-                                : <GreenWhiteCart cartColor={"#10b981"} />
+                                ? <CustomOutlinedCartIcon cartColor={"#ffffff"} />
+                                : <CustomOutlinedCartIcon cartColor={"#10b981"} />
                         }
                     </button>
                     <button

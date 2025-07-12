@@ -34,11 +34,20 @@ export const InquirySection = () => {
 
 
     return (
-        <section aria-label="Customer Inquiry Form" id="inquiry-section" className="relative mt-[1.25rem] bg-[#E0E0E0] rounded-md">
-            <div id="inquiry-overlay" className="absolute inset-0 rounded-md flex justify-between gap-52 p-10">
+        <section
+            aria-label="Customer Inquiry Form"
+            id="inquiry-section"
+            className="relative mt-[1.25rem] bg-[#E0E0E0] rounded-md max-[1212px]:rounded-none"
+        >
+            <div
+                id="inquiry-overlay"
+                className="absolute inset-0 rounded-md flex justify-between gap-52 p-10 transitions
+                max-[1212px]:rounded-none max-[1024px]:gap-48 max-[915px]:gap-40 max-[833px]:gap-28 max-[833px]:px-8 max-[499px]:px-6
+                max-[755px]:gap-11 max-[755px]:flex-wrap"
+            >
                 {/* Text */}
-                <div className="text-[#FFFFFF]">
-                    <h2 className="text-[2rem] leading-10 font-semibold mb-3">
+                <div className="text-[#FFFFFF] space-y-3 max-[755px]:w-full">
+                    <h2 className="text-[2rem] leading-10 font-semibold">
                         An easy way to send <br /> requests to all suppliers
                     </h2>
                     <p className="text-white/80">
@@ -47,7 +56,11 @@ export const InquirySection = () => {
                 </div>
 
                 {/* Form */}
-                <form onSubmit={handleSubmit} className="bg-white rounded-md shadow px-6 pt-[1.45rem] pb-[1.55rem] min-w-[491px] min-h-[346px] self-center text-gray-700">
+                <form
+                    onSubmit={handleSubmit}
+                    className="bg-white rounded-md shadow px-6 pt-[1.45rem] pb-[1.55rem] min-w-[491px] min-h-[346px] self-center text-gray-700 transitions
+                    max-[1024px]:min-w-[440px] max-[915px]:min-w-[390px] max-[833px]:min-w-[360px] max-[755px]:min-w-full max-[755px]:self-start"
+                >
                     <h4 className="text-xl font-semibold leading-7">Send quote to suppliers</h4>
 
                     <input
@@ -56,7 +69,7 @@ export const InquirySection = () => {
                         value={form.item}
                         onChange={handleChange}
                         placeholder="What item you need?"
-                        className="w-full px-3 py-2 mt-4 border border-[#DEE2E7] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+                        className="w-full px-3 py-2 mt-4 border border-[#DEE2E7] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 transitions"
                     />
 
                     <textarea
@@ -64,7 +77,7 @@ export const InquirySection = () => {
                         value={form.details}
                         onChange={handleChange}
                         placeholder="Type more details"
-                        className="w-full px-3 py-2 mt-[1.35rem] h-[73px] border border-[#DEE2E7] rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-blue-400"
+                        className="w-full px-3 py-2 mt-[1.35rem] h-[73px] border border-[#DEE2E7] rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-blue-400 transitions"
                     />
 
                     <div className="flex items-center gap-2 mt-4 mb-5">
@@ -74,14 +87,14 @@ export const InquirySection = () => {
                             value={form.quantity}
                             onChange={handleChange}
                             placeholder="Quantity"
-                            className="px-3 py-2 w-[206px] border border-[#DEE2E7] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+                            className="px-3 py-2 w-[206px] max-[392px]:w-[150px] border border-[#DEE2E7] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 transitions"
                             min="1"
                         />
                         <select
                             name="unit"
                             value={form.unit}
                             onChange={handleChange}
-                            className="px-3 py-[0.55rem] w-[111px] border border-[#DEE2E7] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+                            className="px-3 py-[0.55rem] w-[111px] max-[392px]:w-[80px] border border-[#DEE2E7] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 transitions"
                         >
                             <option>Pcs</option>
                             <option>Kg</option>

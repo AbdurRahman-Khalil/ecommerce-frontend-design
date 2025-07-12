@@ -1,14 +1,14 @@
 import { RecommendedItem } from "./RecommendedItem";
 
-import img1  from "../../../../assets/images/cloth/1.png";
-import img2  from "../../../../assets/images/cloth/3.jpg";
-import img3  from "../../../../assets/images/cloth/7.png";
-import img4  from "../../../../assets/images/cloth/6.png";
-import img5  from "../../../../assets/images/cloth/5.png";
-import img6  from "../../../../assets/images/cloth/4.png";
-import img7  from "../../../../assets/images/tech/9.png";
-import img8  from "../../../../assets/images/interior/3.png";
-import img9  from "../../../../assets/images/tech/10.png";
+import img1 from "../../../../assets/images/cloth/1.png";
+import img2 from "../../../../assets/images/cloth/3.jpg";
+import img3 from "../../../../assets/images/cloth/7.png";
+import img4 from "../../../../assets/images/cloth/6.png";
+import img5 from "../../../../assets/images/cloth/5.png";
+import img6 from "../../../../assets/images/cloth/4.png";
+import img7 from "../../../../assets/images/tech/9.png";
+import img8 from "../../../../assets/images/interior/3.png";
+import img9 from "../../../../assets/images/tech/10.png";
 
 
 
@@ -76,12 +76,14 @@ const products = [
 ];
 
 
-
 export const RecommendSection = () => {
     return (
-        <section aria-label="Recommended Products" className="min-h-[696px] mt-[1.9rem]">
+        <section
+            aria-label="Recommended Products"
+            className="min-h-[696px] mt-[1.9rem] max-[1212px]:mx-5"
+        >
             <h3 className="text-2xl font-semibold leading-8 mb-6">Recommended items</h3>
-            <div id="recommended-items" className="grid grid-cols-5 gap-x-4 gap-y-5">
+            <div id="recommended-items" className="flex items-stretch justify-center flex-wrap gap-5">
                 {products.map((product) => (
                     <RecommendedItem key={product.id} product={product} />
                 ))}

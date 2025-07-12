@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import useProductsStore from "../../../store/products/ProductsStore";
 
 
-export const NavItem = ({ destination, navItemImg, navItemText }) => {
+export const NavItem = ({ destination, navItemImg, navItemText, hideSeek }) => {
     const cartLength = useProductsStore((state) => state.cartLength);
 
     return (
-        <li>
+        <li className={`${hideSeek}`}>
             <Link to={destination} className={`group ${destination === "/my-cart" && "relative"}`}>
                 {destination === "/my-cart" && (
                     <p

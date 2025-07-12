@@ -21,7 +21,7 @@ export const Footer = () => {
 
 
     return (
-        <footer className="-z-10 bg-[#FFFFFF] max-w-full mx-auto mt-[3rem]">
+        <footer className="-z-10 bg-[#FFFFFF] max-w-full mx-auto mt-[3rem] hidden">
             {showNewsletter && <Newsletter />}
             <div className="flex justify-between items-start max-w-[1180px] mx-auto py-14">
                 <div className="space-y-[1.15rem] w-72">

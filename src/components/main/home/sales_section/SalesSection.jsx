@@ -72,12 +72,22 @@ export const SalesSection = () => {
 
 
     return (
-        <section aria-label="Sales Offers" className="p-0.5 min-h-[240px] bg-white border border-[#DEE2E7] rounded-md flex justify-between mt-[1.9rem]">
+        <section
+            aria-label="Sales Offers"
+            className="p-0.5 max-[898px]:pb-0 min-h-[240px] bg-white border border-[#DEE2E7] rounded-md flex justify-between mt-[1.9rem]
+            max-[1212px]:border-x-0 max-[1212px]:rounded-none max-[1169px]:flex-wrap max-[1169px]:gap-2 max-[459px]:gap-3"
+        >
             {/* Timer  */}
-            <div className="flex flex-col px-[1.15rem] py-5">
-                <h4 className="text-xl font-semibold">Deals and offers</h4>
-                <p className="text-[#8B96A5]">Hygiene equipments</p>
-                <div className="flex gap-2 mt-4">
+            <div
+                className="flex flex-col gap-4 px-[1.15rem] py-5 
+                    max-[1169px]:py-6 max-[1169px]:w-full min-[460px]:max-[1169px]:flex-row max-[1169px]:items-center 
+                    max-[1169px]:justify-between max-[459px]:gap-[1.05rem]"
+            >
+                <div>
+                    <h4 className="text-xl font-semibold">Deals and offers</h4>
+                    <p className="text-[#8B96A5]">Hygiene equipments</p>
+                </div>
+                <div className="flex gap-2">
                     {['Days', 'Hour', 'Min', 'Sec'].map((label, i) => {
                         const value = [timeLeft.days, timeLeft.hours, timeLeft.minutes, timeLeft.seconds][i];
                         return (
@@ -91,13 +101,29 @@ export const SalesSection = () => {
             </div>
 
             {/* Products */}
-            <div className="flex">
-                {products.map((product) => (
-                    <SaleCard
-                        key={product.id}
-                        product={product}
-                    />
-                ))}
+            <div
+                id="sales-products"
+                className="group flex max-[1169px]:w-full"
+            >
+                <div className="flex overflow-x-auto whitespace-nowrap scroll-smooth 
+                    [&::-webkit-scrollbar-thumb]:invisible group-hover:[&::-webkit-scrollbar-thumb]:visible
+                    [&::-webkit-scrollbar-track]:invisible group-hover:[&::-webkit-scrollbar-track]:visible
+                    hover:[&::-webkit-scrollbar-thumb]:cursor-grab 
+                    active:[&::-webkit-scrollbar-thumb]:cursor-grabbing
+                    [&::-webkit-scrollbar]:h-1.5
+                    [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300
+                    [&::-webkit-scrollbar-thumb]:rounded-2xl
+                    max-[1169px]:[&>div:nth-child(1)]:border-l-0 max-[1169px]:w-full max-[1169px]:border-t 
+                    max-[1169px]:border-[#DEE2E7] max-[1169px]:pt-0.5
+                    "
+                >
+                    {products.map((product) => (
+                        <SaleCard
+                            key={product.id}
+                            product={product}
+                        />
+                    ))}
+                </div>
             </div>
         </section>
     );

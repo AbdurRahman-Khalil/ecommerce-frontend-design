@@ -3,8 +3,8 @@ import { useEffect, useState, useRef } from "react";
 import useProductsStore from "../../../../store/products/ProductsStore";
 import useSearchStore from "../../../../store/search/SearchStore";
 
+import { FilterBtn } from "./FilterBtn";
 import { DisplayRangeInfo } from "./DisplayRangeInfo";
-import { CustomCheckbox } from "../CustomCheckbox";
 import { ListGridBtns } from "../list_grid_btns/ListGridBtns";
 import { ListView } from "../list_view/ListView";
 import { GridView } from "../grid_view/GridView";
@@ -87,18 +87,18 @@ export const ProductsDisplay = ({ filters }) => {
 
 
     return (
-        <main className="p-6 pt-0 pr-2 flex-1">
-            <div className="flex justify-between items-center bg-[#FFFFFF] p-[0.575rem] pl-[1.15rem] border border-[#DEE2E7] rounded-md">
+        <main className="flex-1">
+            <div
+                className="flex justify-between items-center gap-3 max-[719px]:flex-wrap"
+            >
+                <FilterBtn />
                 <DisplayRangeInfo
                     start={start}
                     end={end}
                     totalFiltered={totalFiltered}
                     totalProducts={totalProducts}
                 />
-                <div className="flex items-center gap-[1.15rem]">
-                    <CustomCheckbox label="Verified only" />
-                    <ListGridBtns />
-                </div>
+                <ListGridBtns />
             </div>
 
             {/* Products */}
@@ -116,7 +116,11 @@ export const ProductsDisplay = ({ filters }) => {
 
             {/* Pagination */}
             {!shouldHidePagination && (
-                <div id="pagination" className="flex items-center justify-end gap-2.5 mt-[1.9rem]">
+                <div
+                    id="pagination"
+                    className="flex items-center justify-end gap-2.5 mt-[1.9rem]
+                    max-[526px]:flex-wrap max-[526px]:flex-col-reverse max-[526px]:gap-y-4"
+                >
                     {/* Dropdown */}
                     <ProductsShowDropdown
                         productsPerPage={productsPerPage}

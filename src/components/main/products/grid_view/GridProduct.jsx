@@ -20,12 +20,11 @@ export const GridProduct = ({ product }) => {
             <Link
                 to={`/products/${genSmallCaseCategory(product.category)}/${product.id}`}
             >
-                <div className="w-full h-[14.375rem] rounded-md p-2.5">
+                <div className="w-full h-[14.5rem] max-[407px]:h-[16.5rem] min-[408px]:max-[535px]:h-[19rem] min-[600px]:max-[791px]:h-[16.5rem] min-[935px]:max-[1059px]:h-[16.5rem] rounded-md p-2.5 transitions">
                     <img src={product.image} className="w-full h-full object-cover rounded-md" alt="" />
                 </div>
             </Link>
-            <div className="bg-[#EFF2F4] h-[1px]"></div>
-            <div className="flex justify-between px-[1.15rem] py-[1.1rem]">
+            <div className="space-y-4 px-[1.05rem] pt-[0.375rem] pb-[1.1rem]">
                 <div className="space-y-2">
                     <div className="flex items-center gap-2">
                         <p className="text-lg font-semibold leading-[100%]">{`$${product.discountedPrice}`}</p>
@@ -34,7 +33,7 @@ export const GridProduct = ({ product }) => {
                     <Rating productId={product.id} totalRating={product.rating} />
                     <p className="text-[#606060]">{product.title}</p>
                 </div>
-                <div className="self-start space-y-2">
+                <div className="flex items-center gap-2">
                     <SaveOrCartBtn product={product} whichIcon={"outlinedCart"} />
                     <SaveOrCartBtn product={product} whichIcon={"outlinedHeart"} />
                 </div>

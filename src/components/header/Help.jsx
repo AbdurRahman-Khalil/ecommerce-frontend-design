@@ -13,7 +13,7 @@ export const Help = () => {
 
 
     return (
-        <div className="relative" ref={dropdownRef}>
+        <div className="relative max-[884px]:hidden" ref={dropdownRef}>
             <button
                 type="button"
                 className="flex items-center justify-between px-2 py-1 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"

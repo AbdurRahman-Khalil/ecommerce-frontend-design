@@ -10,10 +10,10 @@ import cartIcon from "../../../assets/svgs/header_svgs/cart.svg";
 export const Navbar = () => {
     return (
         <nav className="-mb-1.5">
-            <ul className="flex items-center gap-6">
+            <ul className="flex items-center gap-6 max-[374px]:gap-[1.2rem] max-[360px]:gap-[1.08rem] transitions">
                 <NavItem destination={"/profile"} navItemImg={profileIcon} navItemText={"Profile"} />
-                <NavItem destination={"/messages"} navItemImg={messageIcon} navItemText={"Message"} />
-                <NavItem destination={"/orders"} navItemImg={ordersIcon} navItemText={"Orders"} />
+                <NavItem hideSeek={"max-[944px]:hidden"} destination={"/messages"} navItemImg={messageIcon} navItemText={"Message"} />
+                <NavItem hideSeek={"max-[849px]:hidden"} destination={"/orders"} navItemImg={ordersIcon} navItemText={"Orders"} />
                 <NavItem destination={"/my-cart"} navItemImg={cartIcon} navItemText={"My cart"} />
             </ul>
         </nav>

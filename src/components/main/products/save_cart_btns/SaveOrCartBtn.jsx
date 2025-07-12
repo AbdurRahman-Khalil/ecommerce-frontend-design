@@ -9,7 +9,7 @@ import filledHeartIcon from "../../../../assets/svgs/products/filled_heart.svg";
 
 
 
-export const SaveOrCartBtn = ({ product, whichIcon }) => {
+export const SaveOrCartBtn = ({ product, whichIcon, hideSeekCart = null, hideSeekHeart = null }) => {
     const {
         addToCart,
         saveProduct,
@@ -63,7 +63,7 @@ export const SaveOrCartBtn = ({ product, whichIcon }) => {
         <button
             onClick={handleClick}
             className={`w-10 h-10 flex justify-center items-center bg-white border border-[#DEE2E7] rounded-md transitions
-                ${whichIcon === "outlinedCart" ? "hover:bg-[hsl(160,84%,95%)]" : "hover:bg-[hsl(216,98%,96%)]"} 
+                ${whichIcon === "outlinedCart" ? `hover:bg-[hsl(160,84%,95%)] ${hideSeekCart}` : `hover:bg-[hsl(216,98%,96%)] ${hideSeekHeart}`} 
             `}
         >
             <img

@@ -11,7 +11,7 @@ import toast from "react-hot-toast";
 
 
 
-export const Rating = ({ productId, totalRating }) => {
+export const Rating = ({ productId, totalRating, isSmall = null }) => {
     const addRating = useProductsStore((state) => state.addRating);
     const product = useProductsStore((state) =>
         state.products.find((p) => p.id === productId)
@@ -86,7 +86,9 @@ export const Rating = ({ productId, totalRating }) => {
                     </label>
                 );
             })}
-            <p className="text-[#FF9017] ml-1.5 transition-all duration-300 ease-in-out">
+            <p
+                className={`text-[#FF9017] mt-0.5 ml-1.5 transition-all duration-300 ease-in-out ${isSmall}`}
+            >
                 {Number(localTotalRating).toFixed(2)}
             </p>
         </div>

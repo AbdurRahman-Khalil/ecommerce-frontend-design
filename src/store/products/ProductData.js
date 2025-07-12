@@ -268,7 +268,7 @@ const productsData = [
     },
     {
         "id": 10,
-        "title": "Apple Watch Ultra 2 Black AKrales",
+        "title": "Apple Watch Ultra 2",
         "description": "The ultimate adventure smartwatch, featuring a rugged black titanium case, Apple's brightest-ever display (up to 3000 nits), and advanced health and fitness tracking. Powered by the S9 SiP for lightning-fast performance and multi-day battery life, it's water-resistant to 100m and packed with safety features.",
         "originalPrice": 899,
         "discountedPrice": 551.46,
