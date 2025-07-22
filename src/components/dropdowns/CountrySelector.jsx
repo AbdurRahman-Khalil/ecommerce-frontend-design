@@ -41,7 +41,7 @@ export const CountrySelector = () => {
             onSelect={setSelectedCountry}
             renderTrigger={renderTrigger}
             renderOption={renderOption}
-            dropdownBtnStyles={"p-1 rounded-md focus:ring-2 focus:ring-blue-500 max-[479px]:hidden"}
+            dropdownBtnStyles={"p-1 rounded-md focus:ring-2 focus:ring-blue-500 max-[494px]:hidden"}
             align={"right"}
         />
     );

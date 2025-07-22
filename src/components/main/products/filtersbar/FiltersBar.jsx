@@ -103,7 +103,7 @@ export const FiltersBar = ({ filters, setFilters }) => {
                     className="fixed top-0 left-0 bottom-0 z-50 pb-6 bg-[hsl(204,45%,96.5%)] w-72 border-r border-[hsl(215,13%,88%,0.9)] 
                     overflow-y-auto [&::-webkit-scrollbar]:w-1.5 scroll-smooth
                     [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300
-                    max-[450px]:w-64"
+                    max-[450px]:w-64 max-[450px]:[&::-webkit-scrollbar]:w-1"
                 >
                     <div className="flex justify-between items-center px-5 py-4">
                         <p className="text-lg font-medium">Filter products by:</p>

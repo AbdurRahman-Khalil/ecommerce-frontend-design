@@ -19,7 +19,7 @@ export const SearchBar = () => {
         <input
             type="text"
             className="w-80 h-full px-3 rounded-l-lg focus:outline-none hover:bg-gray-50 focus:bg-gray-50 transitions
-                max-[365px]:order-2 max-[365px]:pl-0 max-[365px]:rounded-r-lg"
+                max-[779px]:flex-1 max-[365px]:order-2 max-[365px]:pl-0 max-[365px]:rounded-r-lg"
             placeholder="Search products..."
             value={searchQuery}
             onChange={(e) => updateSearchQuery(e.target.value)}

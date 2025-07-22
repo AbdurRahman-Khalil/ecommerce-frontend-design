@@ -54,7 +54,7 @@ export const ServiceSection = () => {
                     [&::-webkit-scrollbar-track]:invisible group-hover:[&::-webkit-scrollbar-track]:visible
                     hover:[&::-webkit-scrollbar-thumb]:cursor-grab 
                     active:[&::-webkit-scrollbar-thumb]:cursor-grabbing
-                    [&::-webkit-scrollbar]:h-1.5
+                    [&::-webkit-scrollbar]:h-1
                     [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300
                     [&::-webkit-scrollbar-thumb]:rounded-2xl
                     max-[1212px]:[&>div:nth-child(1)]:rounded-s-none max-[1212px]:[&>div:nth-child(1)>div>img]:rounded-s-none

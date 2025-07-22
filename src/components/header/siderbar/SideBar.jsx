@@ -97,7 +97,7 @@ export const SideBar = () => {
                                 />
                                 <AsideMenuItem
                                     onClick={handleClose}
-                                    destination={"/cart"}
+                                    destination={"/my-cart#saved-products"}
                                     menuItemText={"Saved"}
                                     menuItemIcon={grayHeartIcon}
                                 />

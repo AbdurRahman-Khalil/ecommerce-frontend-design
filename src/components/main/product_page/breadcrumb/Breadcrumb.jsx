@@ -5,7 +5,10 @@ import rightArrowIcon from "../../../../assets/svgs/products/right_arrow.svg";
 
 export const Breadcrumb = ({ pCategory, pTitle }) => {
     return (
-        <div aria-label="Breadcrumb" className="text-[#8B96A5] flex gap-1 mb-[1.35rem]">
+        <div
+            aria-label="Breadcrumb"
+            className="text-[#8B96A5] flex gap-1 flex-wrap mb-[1.35rem] max-[1212px]:mx-5"
+        >
             <Link to={"/"} className="-mt-0.5 hover:underline">
                 Home
             </Link>

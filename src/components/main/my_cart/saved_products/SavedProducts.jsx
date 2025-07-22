@@ -7,7 +7,11 @@ export const SavedProducts = () => {
     const savedProducts = useProductsStore((state) => state.savedProducts);
 
     return (
-        <div className="h-max bg-white border border-[#DEE2E7] rounded-md px-5 pt-[1.15rem] pb-[1.4rem]">
+        <div
+            aria-label="Saved Products"
+            id="saved-products"
+            className="h-max bg-white border border-[#DEE2E7] rounded-md px-5 pt-[1.15rem] pb-[1.4rem]"
+        >
             <h4 className="font-semibold text-xl leading-7 mb-[1.3rem]">
                 {`Saved for later (${savedProducts.length})`}
             </h4>

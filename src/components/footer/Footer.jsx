@@ -21,9 +21,14 @@ export const Footer = () => {
 
 
     return (
-        <footer className="-z-10 bg-[#FFFFFF] max-w-full mx-auto mt-[3rem] hidden">
+        <footer
+            className="-z-10 bg-[#FFFFFF] max-w-full mx-auto mt-[3rem]"
+        >
             {showNewsletter && <Newsletter />}
-            <div className="flex justify-between items-start max-w-[1180px] mx-auto py-14">
+            <div
+                className="flex justify-between items-start gap-x-14 gap-y-12 flex-wrap max-w-[1180px] mx-auto py-14
+                    max-[1212px]:mx-5"
+            >
                 <div className="space-y-[1.15rem] w-72">
                     <Logo />
                     <p className="text-[#505050]">Best information about the company gies here but now lorem ipsum is</p>
@@ -43,7 +48,7 @@ export const Footer = () => {
             </div>
 
             <div className="bg-[#EFF2F4] border-t border-[#DEE2E7] py-5">
-                <div className="flex justify-between items-center max-w-[1180px] mx-auto">
+                <div className="flex justify-between items-center max-w-[1180px] mx-auto max-[1212px]:mx-5">
                     <p className="text-[#606060]">@2023 Ecommerce.</p>
                     <LanguageSelector />
                 </div>

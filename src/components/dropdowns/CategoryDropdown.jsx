@@ -55,7 +55,7 @@ export const CategoryDropdown = ({ variant = 'default' }) => {
         if (variant === 'menu') {
             return "justify-between gap-2.5 pl-1 py-1 rounded-md focus:ring-2 focus:ring-blue-500";
         }
-        return "justify-between h-full pl-3.5 pr-2 border-r border-l border-[#127FFF] hover:bg-gray-50 focus:bg-gray-50 transitions max-[1123px]:hidden";
+        return "justify-between h-full pl-3.5 pr-2 border-r border-l border-[#127FFF] hover:bg-gray-50 focus:bg-gray-50 transitions max-[567px]:hidden min-[780px]:max-[1123px]:hidden";
     };
 
 

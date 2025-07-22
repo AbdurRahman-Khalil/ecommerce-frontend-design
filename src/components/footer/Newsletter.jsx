@@ -40,7 +40,7 @@ export const Newsletter = () => {
 
         try {
             const randomString = "cf3ce337e6ba909c5100cb24a79c467e";
-            
+
             const res = await fetch(`https://formsubmit.co/${randomString}`, {
                 method: "POST",
                 headers: {
@@ -72,13 +72,16 @@ export const Newsletter = () => {
 
 
     return (
-        <section aria-label="Newsletter Subscribe" className="bg-[#EFF2F4] py-10 min-h-[190px]">
+        <section
+            aria-label="Newsletter Subscribe"
+            className="bg-[#EFF2F4] px-5 py-10 min-h-[190px]"
+        >
             <div className="max-w-[1180px] mx-auto text-center">
                 <h4 className="text-xl font-semibold leading-7">Subscribe on our newsletter</h4>
                 <p className="text-[#606060] mb-[1.35rem]">Get daily news on upcoming offers from many suppliers all over the world</p>
                 <form
                     onSubmit={handleSubmit}
-                    className="flex items-center justify-center gap-2"
+                    className="flex items-center justify-center gap-x-2 gap-y-4 max-[469px]:flex-col"
                 >
                     <div className="relative w-[274px] h-[40px]">
                         <span className="absolute left-2 top-1/2 -translate-y-1/2 text-gray-400">

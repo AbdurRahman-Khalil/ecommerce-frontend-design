@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 
+import { useLocation } from "react-router-dom";
+
 import { HeroSection } from "../components/main/home/hero_section/HeroSection";
 import { SalesSection } from "../components/main/home/sales_section/SalesSection";
 import { BlockItems } from "../components/main/home/block_items/BlockItems";
@@ -11,9 +13,26 @@ import { CountrySection } from "../components/main/home/country_section/CountryS
 
 
 export const Homepage = () => {
+    const { hash } = useLocation();
+
     useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+        if (hash === '#inquiry-section') {
+            const element = document.getElementById('inquiry-section');
+            if (element) {
+                const offset = 155;
+                const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+                const offsetPosition = elementPosition - offset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        } else {
+            window.scrollTo(0, 0);
+        }
+    }, [hash]);
+
 
     return (
         <div id="homepage">
