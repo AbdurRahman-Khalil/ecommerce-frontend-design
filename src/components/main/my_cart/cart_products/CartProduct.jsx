@@ -36,7 +36,12 @@ export const CartProduct = ({ product }) => {
 
 
     return (
-        <div id="cart-product" className="flex justify-between pb-5 border-b border-[hsl(213,16%,83%)]">
+        <div
+            aria-label="Cart Product"
+            id="cart-product"
+            className="flex justify-between pb-5 border-b border-[hsl(213,16%,83%)]
+                max-[474px]:flex-col max-[474px]:gap-y-3"
+        >
             <div className="flex gap-3">
                 <div className="w-20 h-20 border border-[#E0E0E0] rounded-md">
                     <img src={product.image} className="w-full h-full object-cover rounded-md" alt={`${product.title}'s image`} />
@@ -49,7 +54,7 @@ export const CartProduct = ({ product }) => {
                         <p>{product.brand}</p>
                     </div>
                     <p className="text-[#8B96A5] mb-2.5">Seller:  Artel Market</p>
-                    <div className="space-x-2">
+                    <div className="space-x-2 max-[474px]:hidden">
                         <button
                             onClick={() => removeFromCart(product.id)}
                             className="w-[4.375rem] h-[1.875rem] text-[hsl(0,95%,59%)] font-medium text-[13px] leading-[100%] border border-[#DEE2E7] bg-white hover:bg-[hsl(0,95%,95%)] transitions rounded-md shadow-sm"
@@ -67,7 +72,11 @@ export const CartProduct = ({ product }) => {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col items-center justify-between">
+            <div
+                aria-label="Product quantity increaser and decreaser"
+                className="flex flex-col items-center justify-between
+                    max-[474px]:flex-row min-[376px]:max-[474px]:justify-start max-[474px]:gap-10"
+            >
                 <p className="current-price font-medium leading-[1.375rem]">{`$${product.price}`}</p>
                 <div className="quantity flex justify-between items-center border border-[hsl(213,16%,85%)] rounded-lg h-[2.15rem] w-24">
                     <IncrementDecrementBtn
@@ -85,6 +94,22 @@ export const CartProduct = ({ product }) => {
                     />
                 </div>
                 <p className="total-price font-medium">{`$${Number(product.totalPrice).toFixed(2)}`}</p>
+            </div>
+            <div className="space-x-2 mt-[0.7rem] min-[475px]:hidden">
+                <button
+                    onClick={() => removeFromCart(product.id)}
+                    className="w-[4.375rem] h-[1.875rem] text-[hsl(0,95%,59%)] font-medium text-[13px] leading-[100%] border border-[#DEE2E7] bg-white hover:bg-[hsl(0,95%,95%)] transitions rounded-md shadow-sm"
+                >
+                    Remove
+                </button>
+                <button
+                    onClick={() => handleSaveProduct()}
+                    className={`w-[105px] h-[1.875rem] font-medium text-[13px] leading-[100%] border border-[#DEE2E7] transitions rounded-md shadow-sm
+                                ${isSaved ? "text-[hsl(0,0%,100%)] bg-[hsl(216,98%,60%)] hover:bg-[hsl(216,98%,66%)]" : "text-[hsl(216,98%,52%)] bg-white hover:bg-[hsl(216,98%,95%)]"}
+                            `}
+                >
+                    {isSaved ? "Saved" : "Save for later"}
+                </button>
             </div>
         </div>
     );

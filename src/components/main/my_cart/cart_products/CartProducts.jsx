@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 
 import useProductsStore from "../../../../store/products/ProductsStore";
 
+import { useMediaQuery } from "../../../../hooks/useMediaQuery";
+
 import { CartProduct } from "./CartProduct";
 import { Coupon } from "./Coupon";
 import { TotalAmounts } from "./TotalAmounts";
@@ -16,9 +18,18 @@ export const CartProducts = () => {
     const cart = useProductsStore((state) => state.cart);
     const clearCart = useProductsStore((state) => state.clearCart);
 
+    const isLessTablet = useMediaQuery("(min-width: 577px) and (max-width: 767px)");
+
+
     return (
-        <div className="flex gap-5">
-            <div id="cart-products" className="flex-1 bg-white h-max space-y-5 transitions px-[1.1rem] py-5 border border-[#DEE2E7] rounded-md shadow-md">
+        <div className="flex gap-5 max-[767px]:flex-wrap">
+            <div
+                aria-label="Cart Products"
+                id="cart-products"
+                className="flex-1 bg-white h-max space-y-5 transitions px-5 py-[1.35rem] border border-[#DEE2E7] rounded-md shadow-md
+                    max-[1212px]:border-l-none max-[1212px]:rounded-s-none max-[767px]:min-w-full
+                    max-[767px]:border-r-none max-[767px]:rounded-e-none"
+            >
                 {
                     cart.length === 0
                         ? (
@@ -50,7 +61,12 @@ export const CartProducts = () => {
                     </button>
                 </div>
             </div>
-            <div className="w-[280px] space-y-3">
+            <div
+                className={isLessTablet
+                    ? "w-full flex justify-between gap-5"
+                    : "w-[280px] space-y-3 max-[576px]:w-full"
+                }
+            >
                 <Coupon />
                 <TotalAmounts />
             </div>

@@ -16,20 +16,25 @@ export const TotalAmounts = () => {
     const totalCartPrice = useProductsStore((state) => state.totalCartPrice);
 
     return (
-        <div className="products-amount bg-white w-full h-max border border-[#DEE2E7] rounded-md shadow-md p-[1.2rem]">
+        <div
+            aria-label="Total products amount"
+            className="products-amount bg-white w-full h-max border border-[#DEE2E7] rounded-md shadow-md p-[1.2rem] pb-[1.25rem]
+                max-[1212px]:border-r-none max-[1212px]:rounded-e-none max-[767px]:px-5
+                max-[576px]:border-l-none max-[576px]:rounded-s-none"
+        >
             <p className="text-[#00B517]">Discounted prices are calculated for products.</p>
-            
-            <div className="w-[244px] h-[1px] bg-[#E4E4E4] mt-4 mb-5"></div>
-            
-            <h6 className="text-[#1C1C1C] font-semibold leading-[100%] flex justify-between items-center">
+
+            <div className="w-full h-[1px] bg-[#E4E4E4] mt-4 mb-5"></div>
+
+            <h6 className="text-[#1C1C1C] font-semibold leading-[100%] flex justify-between items-center px-0.5">
                 <span>Total:</span>
                 <span className="font-semibold text-xl leading-7">{`$${totalCartPrice().toFixed(2)}`}</span>
             </h6>
-            
-            <button className="w-[240px] h-[54px] bg-[hsl(128,100%,35%)] hover:bg-[hsl(128,100%,40%)] rounded-lg mt-[1.35rem] transitions">
+
+            <button className="w-full h-[54px] bg-[hsl(128,100%,35%)] hover:bg-[hsl(128,100%,40%)] rounded-lg mt-[1.35rem] transitions">
                 <Link className="text-white">Checkout</Link>
             </button>
-            
+
             <div className="payment-cards flex gap-2 w-max mx-auto mt-[1.15rem]">
                 <PaymentCard paymentCardLogo={americanExpressLogo} />
                 <PaymentCard paymentCardLogo={mastercardLogo} />

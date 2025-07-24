@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 import { Homepage } from "../../pages/Homepage";
 import { Products } from "../../pages/Products";
@@ -11,10 +11,13 @@ import { MyCart } from "../../pages/MyCart";
 
 
 export const Main = () => {
+    const location = useLocation();
+    const isMyCart = location.pathname.includes("my-cart");
+
     return (
         <main
-            className="mt-[9.6rem] max-w-[1180px] mx-auto 
-            max-[1212px]:max-w-full max-[1212px]:mx-0 max-[779px]:mt-[12.9rem]"
+            className={`mt-[9.6rem] max-w-[1180px] mx-auto 
+            max-[1212px]:max-w-full max-[1212px]:mx-0 ${isMyCart ? "max-[779px]:mt-[9.25rem]" : "max-[779px]:mt-[12.9rem]"}`}
         >
             <Routes>
                 <Route path="/" element={<Homepage />} />

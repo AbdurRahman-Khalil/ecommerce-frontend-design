@@ -33,7 +33,7 @@ export const MyCart = () => {
     
 
     return (
-        <section aria-label="Shopping Cart" className="-mt-[2.5rem]">
+        <section aria-label="Shopping Cart" className="-mt-[2.75rem]">
             <CartHeader />
             <CartProducts />
             <Features />

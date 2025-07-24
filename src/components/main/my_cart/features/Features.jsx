@@ -30,7 +30,7 @@ const features = [
 
 export const Features = () => {
     return (
-        <div className="flex items-center my-10">
+        <div className="flex items-center gap-x-14 gap-y-9 flex-wrap my-10 max-[1212px]:px-5">
             {
                 features.map((feature) => (
                     <Feature key={feature.id} feature={feature} />
