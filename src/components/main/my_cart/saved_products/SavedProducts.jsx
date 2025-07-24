@@ -23,7 +23,7 @@ export const SavedProducts = () => {
                 {
                     savedProducts.length === 0
                         ? (
-                            <p>
+                            <p className="mb-[1.35rem]">
                                 {`No products are saved :(`}
                             </p>
                         ) : (
